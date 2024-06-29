@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Commerce</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <i class="fa-solid fa-shop"></i>
+          <h1>MyCommerce</h1>
+        </div>
+
+        <ul>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Contact</a></li>
+          <li>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="content">
+        <div class="div-text">
+          <span>outifit of the day</span>
+          <h3>all your</h3>
+          <h1>style are here</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br />
+            Nostrum deleniti at eveniet corporis molestias ipsam.
+          </p>
+          <a href="#" class="btn">buy now</a>
+        </div>
+
+        <div class="div-img">
+          <img id="big-img" src="images/polo.png" alt="" />
+        </div>
+
+        <div class="small-img">
+          <img onclick="myTshirt(this.src)" src="images/polo.png" alt="" />
+          <img onclick="myTshirt(this.src)" src="images/polo2.png" alt="" />
+          <img onclick="myTshirt(this.src)" src="images/polo3.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let bigImage = document.getElementById("big-img");
+
+      function myTshirt(shirt) {
+        bigImage.src = shirt;
+      }
+    </script>
+  </body>
+</html>
